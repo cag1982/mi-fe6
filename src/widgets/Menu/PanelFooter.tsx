@@ -6,9 +6,9 @@ import Flex from "../../components/Flex/Flex";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Link from "../../components/Link/Link";
 import Skeleton from "../../components/Skeleton/Skeleton";
-import Button from "../../components/Button/Button";
+// import Button from "../../components/Button/Button";
 import IconButton from "../../components/Button/IconButton";
-import MenuButton from "./MenuButton";
+// import MenuButton from "./MenuButton";
 import * as IconModule from "./icons";
 import { socials, MENU_ENTRY_HEIGHT } from "./config";
 import { PanelProps, PushedProps } from "./types";
@@ -21,8 +21,7 @@ const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
 const Container = styled.div`
   flex: none;
   padding: 8px 4px;
-  background-color: rgba(224, 224, 224, .09);
-  border-top: solid 2px rgba(133, 133, 133, 0.1);
+  background-color: #2b487d;
 `;
 
 const PriceBox = styled.div`
@@ -56,10 +55,14 @@ const SocialEntry = styled.div`
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 16px;
+
+  svg {
+    fill: rgba(255, 255, 255, .8);
+  }
 `;
 
 const MusicIcon = styled.a`
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 1);
 `
 
 const anim = keyframes`
@@ -165,7 +168,7 @@ const PanelFooter: React.FC<Props> = ({
           {cakePriceUsd ? (
             <PriceLink href={priceLink} target="_blank">
               <PancakeRoundIcon width="24px" mr="8px" />
-              <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+              <Text color="#fff" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
             </PriceLink>
           ) : (
             <Skeleton width={80} height={24} />

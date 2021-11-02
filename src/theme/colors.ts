@@ -5,7 +5,7 @@ export const baseColors = {
   primary: "#2b487d",
   primaryBright: "#627D98",
   primaryDark: "#334E68",
-  secondary: "#E4C2AB",
+  secondary: "#7fa94a",
   success: "#7fa94a",
   warning: "#A6391C",
 };
@@ -27,7 +27,7 @@ export const lightColors: Colors = {
   textDisabled: "rgba(33, 33, 33, .38)",
   textSubtle: "rgba(33, 33, 33, .60)",
   borderColor: "rgba(33, 33, 33, .12)",
-  card: "rgba(224, 224, 224, .5)",
+  card: "rgba(33, 33, 33, .25)",
   modal: "#323232",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
@@ -47,7 +47,7 @@ export const darkColors: Colors = {
   textDisabled: "rgba(255, 255, 255, .38)",
   textSubtle: "rgba(255, 255, 255, .60)",
   borderColor: "rgba(224, 224, 224, .12)",
-  card: "rgba(224, 224, 224, .5)",
+  card: "rgba(33, 33, 33, .25)",
   modal: "#323232",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",

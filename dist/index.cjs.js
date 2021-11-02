@@ -2553,7 +2553,7 @@ var templateObject_1$B;
 
 var Icons$1 = IconModule;
 // const { MoonIcon, SunIcon, LanguageIcon } = Icons;
-var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: rgba(224, 224, 224, .09);\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: rgba(224, 224, 224, .09);\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])));
+var Container$4 = styled__default['default'].div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #2b487d;\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: #2b487d;\n"])));
 var PriceBox = styled__default['default'].div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  padding: 8px 16px;\n"], ["\n  padding: 8px 16px;\n"])));
 var PriceLink = styled__default['default'].a(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 // const SettingsEntry = styled.div`
@@ -2563,8 +2563,8 @@ var PriceLink = styled__default['default'].a(templateObject_3$7 || (templateObje
 //   height: ${MENU_ENTRY_HEIGHT}px;
 //   padding: 0 8px;
 // `;
-var SocialEntry = styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
-var MusicIcon = styled__default['default'].a(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  color: rgba(255, 255, 255, .6);\n"], ["\n  color: rgba(255, 255, 255, .6);\n"])));
+var SocialEntry = styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  svg {\n    fill: rgba(255, 255, 255, .8);\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n\n  svg {\n    fill: rgba(255, 255, 255, .8);\n  }\n"])), MENU_ENTRY_HEIGHT);
+var MusicIcon = styled__default['default'].a(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  color: rgba(255, 255, 255, 1);\n"], ["\n  color: rgba(255, 255, 255, 1);\n"])));
 var anim = styled.keyframes(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  0% {\n    transform:scale(1);\n  }\n  10% {\n    transform:scale(1.125);\n  }\n  20% {\n    transform:scale(1);\n  }\n  30% {\n    transform:scale(1.125);\n  }\n  40% {\n    transform:scale(1);\n  }\n  50% {\n    transform:scale(1.125);\n  }\n  60% {\n    transform:scale(1);\n  }\n  70% {\n    transform:scale(1.125);\n  }\n  80% {\n    transform:scale(1);\n  }\n  90% {\n    transform:scale(1.125);\n  }\n"], ["\n  0% {\n    transform:scale(1);\n  }\n  10% {\n    transform:scale(1.125);\n  }\n  20% {\n    transform:scale(1);\n  }\n  30% {\n    transform:scale(1.125);\n  }\n  40% {\n    transform:scale(1);\n  }\n  50% {\n    transform:scale(1.125);\n  }\n  60% {\n    transform:scale(1);\n  }\n  70% {\n    transform:scale(1.125);\n  }\n  80% {\n    transform:scale(1);\n  }\n  90% {\n    transform:scale(1.125);\n  }\n"])));
 var MusicIconPlaying = styled__default['default'].a(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  animation-name: ", ";\n  animation-duration: 5s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n  color: rgba(255, 255, 255, .87);\n"], ["\n  animation-name: ", ";\n  animation-duration: 5s;\n  animation-timing-function: ease;\n  animation-iteration-count: infinite;\n  color: rgba(255, 255, 255, .87);\n"])), anim);
 var AudioPlayer = function () {
@@ -2597,7 +2597,7 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(Flex, { alignItems: "center", justifyContent: "space-between" },
             React__default['default'].createElement(PriceBox, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+                React__default['default'].createElement(Text, { color: "#fff", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
             React__default['default'].createElement(AudioPlayer, null)),
         React__default['default'].createElement(SocialEntry, null, socials.map(function (social, index) {
             var Icon = Icons$1[social.icon];
@@ -2858,7 +2858,7 @@ var UserBlock = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
+    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { size: "sm", variant: "primary", onClick: function () {
             onPresentAccountModal();
         } }, accountEllipsis)) : (React__default['default'].createElement(Button, { size: "sm", onClick: function () {
             onPresentConnectModal();
@@ -3089,17 +3089,17 @@ var baseColors = {
     primary: "#2b487d",
     primaryBright: "#627D98",
     primaryDark: "#334E68",
-    secondary: "#E4C2AB",
+    secondary: "#7fa94a",
     success: "#7fa94a",
     warning: "#A6391C",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#b3e0e6", backgroundDisabled: "#aaa", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(33, 33, 33, .87)", textDisabled: "rgba(33, 33, 33, .38)", textSubtle: "rgba(33, 33, 33, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(224, 224, 224, .5)", modal: "#323232", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#b3e0e6", backgroundDisabled: "#aaa", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(33, 33, 33, .87)", textDisabled: "rgba(33, 33, 33, .38)", textSubtle: "rgba(33, 33, 33, .60)", borderColor: "rgba(33, 33, 33, .12)", card: "rgba(33, 33, 33, .25)", modal: "#323232", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#b3e0e6", backgroundDisabled: "#aaa", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(224, 224, 224, .5)", modal: "#323232", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#b3e0e6", backgroundDisabled: "#aaa", contrast: "rgba(224, 224, 224, .12)", invertedContrast: "#FFFFFF", input: "rgba(224, 224, 224, .12)", tertiary: "rgba(224, 224, 224, .08)", text: "rgba(255, 255, 255, .87)", textDisabled: "rgba(255, 255, 255, .38)", textSubtle: "rgba(255, 255, 255, .60)", borderColor: "rgba(224, 224, 224, .12)", card: "rgba(33, 33, 33, .25)", modal: "#323232", gradients: {
         bubblegum: "linear-gradient(139.73deg, #272727 0%, #353535 100%)",
     } });
 
