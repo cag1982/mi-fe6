@@ -62,6 +62,19 @@ const StyledAuditSC = styled.a`
   img {
     width: 100%;
   }
+
+  span {
+    position: absolute;
+    top: -14px;
+    right: 24px;
+    font-size: 10px;
+    padding: 4px 8px;
+    border: 1px solid #84D4CE;
+    border-radius: 6px;
+    color: #84D4CE;
+    background-color: rgba(33, 33, 33, 0.5);
+    font-weight: bold;
+  }
 `
 
 const StyledPaladin = styled.a`
