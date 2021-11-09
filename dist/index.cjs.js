@@ -2987,7 +2987,7 @@ var Menu = function (_a) {
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React__default['default'].createElement(Flex, { alignItems: "center" },
-                auditLink ? (React__default['default'].createElement("a", { href: auditLink, target: "_blank", rel: "noreferrer", style: { marginRight: '6px' } },
+                auditLink ? (React__default['default'].createElement("a", { href: auditLink, style: { marginRight: '6px' } },
                     React__default['default'].createElement(Tag, { startIcon: React__default['default'].createElement(FeaturesIcon, null), variant: "secondary", outline: true }, auditText))) : null,
                 React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),

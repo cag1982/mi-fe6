@@ -164,7 +164,7 @@ const Menu: React.FC<NavProps> = ({
         />
         <Flex alignItems="center">
           {auditLink ? (
-            <a href={auditLink} target="_blank" rel="noreferrer" style={{ marginRight: '6px' }}>
+            <a href={auditLink} style={{ marginRight: '6px' }}>
               <Tag startIcon={<FeaturesIcon />} variant="secondary" outline>{auditText}</Tag>
             </a>
           ) : null}
